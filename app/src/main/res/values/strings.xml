@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fishlabs</string>
+    <string name="title_home"> </string>
+    <string name="title_scan"> </string>
+    <string name="title_savelist"> </string>
+    <string name="desc_banner">Welcome To Fishlabs</string>
+    <string name="desc_banner2">You can find any fish you might be looking for.</string>
+    <string name="Fish_category">Fish Category </string>
+    <string name="text_category1">Seawater Fish </string>
+    <string name="text_category2">Freshwater Fish </string>
+    <string name="desc_category1">There are many types of marine fish here.</string>
+    <string name="desc_category2">There are many types of freshwater fish here. </string>
+    <string name="search">Find your fish... </string>
+</resources>
