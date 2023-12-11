@@ -11,4 +11,6 @@
     <string name="desc_category1">There are many types of marine fish here.</string>
     <string name="desc_category2">There are many types of freshwater fish here. </string>
     <string name="search">Find your fish... </string>
+    <string name="seawater_list">Fish \nName </string>
+    <string name="data_tidak_ditemukan">Data Tidak Ditemukan </string>
 </resources>
