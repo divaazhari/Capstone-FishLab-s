@@ -13,7 +13,13 @@
         android:theme="@style/Theme.FishlabsCapstoneProject"
         tools:targetApi="31">
         <activity
-            android:name=".ui.fish.FishListActivity"
+            android:name=".ui.fish.DetailFishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.freshwaterfish.FreshwaterFishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.seawaterfish.FishListActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

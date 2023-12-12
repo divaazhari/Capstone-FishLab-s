@@ -1,13 +1,15 @@
 package com.franklin.fishlabs_capstoneproject.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.franklin.fishlabs_capstoneproject.databinding.FragmentHomeBinding
+import com.franklin.fishlabs_capstoneproject.ui.freshwaterfish.FreshwaterFishActivity
+import com.franklin.fishlabs_capstoneproject.ui.seawaterfish.FishListActivity
 
 class HomeFragment : Fragment() {
 
@@ -28,12 +30,28 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
         return root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+
+            bannerCategory1.setOnClickListener {
+                Intent(requireActivity(), FishListActivity::class.java).apply {
+                    startActivity(this)
+                }
+            }
+
+            bannerCategory2.setOnClickListener{
+                Intent(requireActivity(), FreshwaterFishActivity::class.java).apply {
+                    startActivity(this)
+                }
+            }
+            fun onDestroyView() {
+                super.onDestroyView()
+                _binding = null
+            }
+        }
     }
 }

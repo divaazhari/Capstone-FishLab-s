@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fish.FishListActivity">
+    tools:context=".ui.seawaterfish.FishListActivity">
 
   <FrameLayout
       android:id="@+id/frameLayout"
@@ -44,7 +44,7 @@
   </FrameLayout>
 
   <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/rvFood"
+      android:id="@+id/rvFish"
       android:layout_width="match_parent"
       android:layout_height="0dp"
       app:layout_constraintTop_toBottomOf="@+id/frameLayout"
@@ -69,9 +69,9 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:visibility="gone"
-      app:layout_constraintBottom_toBottomOf="@+id/rvFood"
-      app:layout_constraintEnd_toEndOf="@+id/rvFood"
-      app:layout_constraintStart_toStartOf="@+id/rvFood"
-      app:layout_constraintTop_toTopOf="@+id/rvFood" />
+      app:layout_constraintBottom_toBottomOf="@+id/rvFish"
+      app:layout_constraintEnd_toEndOf="@+id/rvFish"
+      app:layout_constraintStart_toStartOf="@+id/rvFish"
+      app:layout_constraintTop_toTopOf="@+id/rvFish"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
